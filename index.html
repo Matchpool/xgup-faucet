@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <title>ERC20</title>
+</head>
+<body>
+
+  <div class="container" style="margin-top: 30px">
+    <div class="columns">
+      <div class="column col-4 col-mx-auto">
+        <div id="error-label"></div>
+        <div class="panel">
+          <div class="panel-nav">
+            <ul class="tab tab-block">
+              <li class="tab-item">
+                <a id="send-ref" href="#send">Send</a>
+              </li>
+              <li class="tab-item">
+                <a id="claim-ref" href="#claim">Claim</a>
+              </ul>
+            </div>
+            <div id="tx-list" class="panel-body" style="max-height: 275px"></div>
+            <div class="panel-footer">
+              <div class="divider"></div>
+              <div id="send-form" class="form-group" style="display:none">
+                <label class="form-label" for="input-recipient">Recipient</label>
+                <input id="input-recipient" class="form-input" type="text" placeholder="Recipient">
+                <label class="form-label" for="input-amount">Amount</label>
+                <input id="input-amount" class="form-input" type="text" placeholder="Amount">
+                <button id="btn-send" class="btn btn-primary btn-block" style="margin-top: 12px">Send</button>
+              </div>
+              <div id="claim-form" class="form-group" style="display:none">
+                <label class="form-label" for="input-claim">Recipient</label>
+                <input id="input-claim" class="form-input" type="text" placeholder="..." disabled>
+                <button id="btn-claim" class="btn btn-primary btn-block" style="margin-top: 12px">Claim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app/router.js"></script>
+  <script src="app/token.js"></script>
+  <script src="app/template.js"></script>
+  <script src="app/app.js"></script>
+
+</body>
+</html>
